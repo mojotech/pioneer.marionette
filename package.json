@@ -1,0 +1,41 @@
+{
+  "name": "pioneer.marionette",
+  "description": "Pioneer Marionette Widgets",
+  "keywords": [
+    "cucumber",
+    "selenium-webdriver",
+    "testing",
+    "pioneer"
+  ],
+  "author": "MojoTech",
+  "version": "0.1.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "main": "./lib/widget.view.js",
+  "scripts": {
+    "build": "npm run-script clean && gulp",
+    "test": "./node_modules/.bin/pioneer test/integration/features --require test/integration/steps --require lib/widget.view.js --require test/integration/widgets --format=pretty --driver=phantomjs --prevent-browser-reload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mojotech/pioneer.marionette.git"
+  },
+  "devDependencies": {
+    "bluebird": "^1.2.4",
+    "coffee-script": "1.7.1",
+    "exec": "^0.1.1",
+    "gulp": "^3.8.7",
+    "gulp-coffee": "^1.4.3",
+    "mocha": "^1.19.0",
+    "should": "^3.3.1",
+    "sinon": "^1.10.0",
+    "pioneer": "^0.6.3",
+    "chai": "^1.9.1"
+  },
+  "bugs": {
+    "url": "https://github.com/mojotech/pioneer.marionette/issues"
+  },
+  "homepage": "https://github.com/mojotech/pioneer.marionette"
+}
