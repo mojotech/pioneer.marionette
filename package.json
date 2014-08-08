@@ -15,7 +15,7 @@
   },
   "main": "./lib/widget.view.js",
   "scripts": {
-    "build": "npm run-script clean && gulp",
+    "build": "gulp",
     "test": "./node_modules/.bin/pioneer test/integration/features --require test/integration/steps --require lib/widget.view.js --require test/integration/widgets --format=pretty --driver=phantomjs --prevent-browser-reload"
   },
   "repository": {
